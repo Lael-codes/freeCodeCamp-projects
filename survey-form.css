@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #7E7F83;
+    font-family: Inter;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+body {
+    padding: 32px;
+    background-color: #34312D;
+}
+
+.form-body {
+    background-color: #14110F;
+    width: 500px;
+    margin: auto;
+    padding: 32px;
+    border: 1px solid #D9C5B2;
+
+}
+
+h1 {
+    color: #D9C5B2;
+    margin: 0 0 16px 0;
+    font-family: "LEMON MILK";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    color: #F3F3F4;
+    margin: 0 0 8px 0;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+h1, p {
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.fieldset-last {
+    border: 0;
+    margin-bottom: 2rem;
+}
+
+input, select, textarea , button {
+    border: 1px solid #7E7F83;
+    background: #34312D;
+    height: 2.5rem;
+    color:#F3F3F4;
+    width: 100%;
+    padding: 0 0 0 8px;
+}
+
+hr {
+    background-color: #34312D;
+    margin-bottom: 2rem;
+    height: 1px;
+    border: none;
+    width: 100%;
+}
+
+label , input {
+    display: block;
+}
+
+.align-label {
+    display: flex;
+}
+
+.option:not(.option-last){
+    margin: 0 0 8px 0;
+}
+
+.title {
+    margin: 0 0 4px 0;
+}
+
+.normal-size {
+    width: unset;
+    height: unset;
+    display: inline;
+    margin: 0 6px 0 0;
+    border: 1px solid #7E7F83;
+    background: #34312D;
+}
+
+legend , .more-gap{
+    margin: 0 0 12px 0;
+}
+
+textarea {
+    height: 150px;
+    padding-top: 4px;
+}
+
+input[type=submit] {
+    width: 100px;
+    padding: 8px;
+    margin: auto;
+}
+a {
+    padding-left: 4px;
+}
+
+legend, .title, a {
+    color: #D9C5B2;
+}
+
+button {
+    padding: 0;
+}

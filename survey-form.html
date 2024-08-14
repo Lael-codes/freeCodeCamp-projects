@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./survey-form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form action="" method="post" class="form-body" id="survey-form">
+            <h1 id="title">Enhancing Your Learning Experience</h1>
+            <p id="description">"Help us make online learning even better—share your insights in just a few clicks!"</p>
+
+            <hr />
+
+            <fieldset>
+                <div class="option">
+                    <label for="name" class="title" id="name-label">Full Name:</label>
+                    <input required type="text" id="name" placeholder="Enter your Name" />
+                </div>
+                <div class="option">
+                    <label for="email" class="title" id="email-label">Email Account:</label>
+                    <input required type="email" id="email" placeholder="Enter your Email" />
+                </div>
+                <div class="option option-last">
+                    <label for="number" class="title" id="number-label">Age:</label>
+                    <input required type="number" id="number" placeholder="Enter your Age" min="18" max="120"/>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <div class="option">
+                    <label for="gender-female" class="align-label"><input id="gender-female" type="radio" name="gender" class="normal-size inline" value="Female" required checked>Female</label>
+                </div>
+
+                <div class="option">
+                    <label for="gender-male" class="align-label"><input id="gender-male" type="radio" name="gender" class="normal-size inline" value="Male">Male</label>
+                </div>
+
+                <div class="option option-last">
+                    <label for="gender-undisclosed" class="align-label"><input id="gender-undisclosed" type="radio" name="gender" class="normal-size inline" value="Prefer not to say">Prefer not to say</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>What devices do you use for online learning? (Select all that apply)</legend>
+                <div class="option">
+                    <label for="device-smartphone" class="align-label"><input id="device-smartphone" type="checkbox" name="device-type" class="normal-size inline" value="Smartphone" required checked>Smartphone</label>
+                </div>
+
+                <div class="option">
+                    <label for="device-tablet" class="align-label"><input id="device-tablet" type="checkbox" name="device-type" class="normal-size inline" value="Tablet">Tablet</label>
+                </div>
+
+                <div class="option">
+                    <label for="device-laptop" class="align-label"><input id="device-laptop" type="checkbox" name="device-type" class="normal-size inline" value="Laptop">Laptop</label>
+                </div>
+
+                <div class="option option-last">
+                    <label for="device-desktop" class="align-label"><input id="device-desktop" type="checkbox" name="device-type" class="normal-size inline" value="Desktop">Desktop</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="option option-last">
+                    <label for="dropdown" class="title more-gap">How would you rate your overall experience with online learning platforms?</label>
+                    <select name="ratings" id="dropdown" required >
+                        <option value="(Choose an option)" class="no-bold">(Choose an option)</option>
+                        <option value="Awesome">Awesome</option>
+                        <option value="Very Good">Very Good</option>
+                        <option value="Good">Good</option>
+                        <option value="Okay">Okay</option>
+                        <option value="Bad">Bad</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset-last">
+                <div class="option option-last">
+                    <label for="comment" class="title more-gap">Additional Comments or Feedback</label>
+                    <textarea name="comments-section" id="comment" placeholder="It was great?..."></textarea>
+                </div> 
+            </fieldset>
+
+            <hr />
+
+            <div class="fieldset-last">
+                <label for="terms-and-conditions" class="align-label"><input id="terms-and-conditions" value="i-agree-to-all-terms-and-condition" type="checkbox" name="terms-and-conditions" class="normal-size inline" required>I agree to all<a href="">Terms and Conditions</a></label>
+            </div>
+
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
